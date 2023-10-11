@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+
+article {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.elemento1::before {
+    /* content: "Olá Mundo"; */
+    content: "";
+    color: red;
+    position: absolute;
+    /* top: -15px; */
+    right: -7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.elemento2::before {
+    /* content: "Olá Mundo"; */
+    content: "";
+    color: red;
+    position: absolute;
+    /* top: -15px; */
+    left: -7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}

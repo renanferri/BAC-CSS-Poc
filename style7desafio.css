@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+div {
+    background-color: gray;
+    width: 240px;
+    height: 100px;
+}
+
+.container {    
+    width: 600px;
+    height: 300px;
+    background-color: #123456;
+    display: flex;
+    flex-direction: row;    
+    align-items: center; 
+    column-gap: 5px;      
+}
+
+.first {
+    margin: 0 0 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border: 2px solid black;    
+    border-radius: 10px; 
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    
+    column-gap: 16px;
+}
+
+.first::before {
+    content: "";    
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10.5px;    
+    border-right: 2px solid black;    
+}
+
+.second {
+    margin: 0 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border: 2px solid black; 
+    border-radius: 0 10px 10px 10px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;    
+    column-gap: 16px;
+}
+
+.second::before {
+    content: "";    
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10.5px;    
+    border-left: 2px solid black;    
+}
+
+.second::after {
+    content: "Matrix: prepare-release-on-se...";
+    color: #fff3f3;
+    font-style: bold;
+    font-size: 10px;
+    position: absolute;
+    top: -30.5px;
+    left: -2px;
+    background-color: gray;
+    height: 0px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;    
+}
+
+.line {
+    height: 3px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.check-ok {
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+p {    
+    font-size: 14px;
+    color: #fff3f3;
+    font-style: bold;
+}
+
+
+
+
